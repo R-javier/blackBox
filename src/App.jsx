@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Stack, Text, Button, Box } from "@chakra-ui/react";
+import { Stack, Text, Button, Box, Heading } from "@chakra-ui/react";
 import "./App.css";
 
 const questions = [
@@ -128,17 +128,19 @@ function App() {
           borderRadius="lg"
           p={20}
         >
-          <Text>
-            Tu puntuación {score} de {questions.length}
-          </Text>
+          <Stack>
+            <Heading as="h2" size="md" color="white">
+              Your score {score} out of {questions.length}
+            </Heading>
+          </Stack>
           <Stack pt={3}>
             <Button
               onClick={() => handleResetButton()}
               variant="solid"
-              colorScheme="blue"
-              size="sm"
+              color="#42b5a4"
+              size="md"
             >
-              Juega de nuevo :) ?
+              Start again
             </Button>
           </Stack>
         </Box>
