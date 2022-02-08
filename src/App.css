@@ -3,17 +3,3 @@
   align-items: center;
   min-height: 100vh;
 }
-
-.boxQuestion {
-  background-color: #ffe286;
-  color: black;
-  font-weight: bold;
-}
-
-.correct {
-  background-color: green;
-}
-
-.incorrect {
-  background-color: red;
-}
